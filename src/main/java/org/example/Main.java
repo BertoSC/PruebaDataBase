@@ -9,6 +9,7 @@ public class Main {
         try {
             con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Juego", "postgres", "");
             //showTabla(con);
+            //
 
             // Creación del Statement con ResultSet actualizable y desplazable
             var st = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
